@@ -1,11 +1,19 @@
-class Operacao {
-  char sinal;
-  int qtdValores = 2;
-  
-  public void ola() {
-    System.out.println("ola de dentro da operacao");
-  }
-  public float calcular(float v1, float v2) {
-    return 0f;
-  } 
+public abstract class Operacao {
+
+    protected double operador1;
+
+    protected char sinal;
+
+
+    public double calcular() {
+        return 0f;
+    }
+
+    public void setOperador1(double operador1) {
+        this.operador1 = operador1;
+    }
+
+    public char getSinal() {
+        return sinal;
+    }
 }
